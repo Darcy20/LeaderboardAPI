@@ -18,7 +18,7 @@ namespace LeaderboardAPI.Controllers
 
 
         [HttpPost("{id}/score/{score}")]
-        public decimal GetCustomersByRank(Int64 id, decimal score)
+        public decimal UpdateCustomerRank(Int64 id, decimal score)
         {
             lock(_locker)
             {
